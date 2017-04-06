@@ -15,11 +15,15 @@ Route::get('/', function () {
 
     $tasks = DB::table('tasks')->latest()->get();
 
-    return view('welcome', compact('tasks'));
+    return view('welcome',compact('tasks'));
+
 });
 
-Route::tasks('/tasks/{id}', function($id){
-    $tasks = DB::table('tasks')->latest($id)->get();
+Route::get('tasks/{task}', function(Task $task){
 
-    return view('task' {$id} );
+    $task = DB::table('tasks')->find($id);
+
+    dd($task);
+
+    return view('tasks.show', compact('task'));
 });

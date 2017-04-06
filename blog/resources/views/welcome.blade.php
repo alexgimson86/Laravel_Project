@@ -8,10 +8,10 @@
 </head>
 
 <body>
-    <h1> Hey there you worthless {{ $fuck="fuck" }} Welcome to laravel</h1>
+    <h1> Hey there, Welcome to laravel</h1>
     <ul>
         @foreach($tasks as $task)
-            <li> {{ $task->body}}  </li>
+        <li> {{ $task->body}} </li>
         @endforeach
     </ul>
 
