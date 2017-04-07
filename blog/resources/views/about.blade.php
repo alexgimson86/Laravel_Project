@@ -1,12 +1,15 @@
 <!DOCTYPE>
 <html>
 
-<head>
-    <title> about us page </title>
-</head>
+    <head>
+        <title>
+            about page
+        </title>
+    </head>
 
-<body>
-
-</body>
+    <body>
+        <h1>Laravel About page</h1>
+        
+    </body>
 
 </html>
