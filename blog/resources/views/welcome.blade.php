@@ -1,22 +1,19 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+<!DOCTYPE>
+<head>
+    <title>
+        hey there how are you
+    </title>
+</head>
 
-    <body>
-    <h1>Hello welcome to Laravel</h1>
+<body>
+    <h1>sup there foo</h1>
+    <ul>
         @foreach ($tasks as $task)
-            <ul>
-                <li> {{ $task->body }} </li>
-            </ul>
+        <li>
+            task {{$task->id}} is to {{$task->body}}
+        </li>
         @endforeach
-    </body>
-</html>
+    </ul>
+
+</body>
+
