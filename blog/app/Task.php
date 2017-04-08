@@ -6,8 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Task extends Model
 {
-    public function isComplete(){
+    public function isComplete() {
         
-        return false;
+        if($this->id % 2 == 0 )
+            return true;
+        else
+            return false;
+
     }
 }
