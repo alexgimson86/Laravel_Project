@@ -15,4 +15,12 @@ class Task extends Model
 
         return $query->where('complete', 1);   
     }
+    
+    public function isComplete(){
+        
+        if($this->complete == 1)
+            return true;
+        else
+            return false;
+    }
 }
