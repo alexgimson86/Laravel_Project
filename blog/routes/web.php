@@ -1,7 +1,7 @@
 <?php
 
-Route::get ('/tasks', 'TasksController@index');
+//Route::get ('/tasks', 'TasksController@index');
 
-Route::get ('/tasks/{task}', 'TasksController@show');
+Route::get ('/posts/create', 'PostController@create');
 
 Route::get('/', 'PostController@index');
