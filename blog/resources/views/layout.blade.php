@@ -8,7 +8,7 @@
   <meta name="author" content="">
   <link rel="icon" href="../../favicon.ico">
 
-  <title>Blog Template for Bootstrap</title>
+  <title>Alex Gimsons Blog </title>
 
   <!-- Bootstrap core CSS -->
   <script
@@ -28,7 +28,7 @@
 
   <div class="blog-header">
     <div class="container">
-      <h1 class="blog-title">The Bootstrap Blog</h1>
+      <h1 class="blog-title">Alex Gimsons Blog</h1>
       <p class="lead blog-description">An example blog template built with Bootstrap.</p>
     </div>
   </div>
