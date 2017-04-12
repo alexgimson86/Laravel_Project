@@ -33,6 +33,8 @@ class PostController extends Controller
 
         \App\Post::create( request(['title','body']));
 
-        return redirect('/');
+        $posts = App\Post::all();
+
+        return redirect('/', compact('posts'));
     }
 }
