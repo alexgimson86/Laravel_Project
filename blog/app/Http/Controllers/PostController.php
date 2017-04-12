@@ -31,9 +31,9 @@ class PostController extends Controller
             'body' => 'required|min:15'
         ]);
 
-        \App\Post::create( request(['title','body']));
+        \App\Posts::create( request(['title','body']));
 
-        $posts = App\Post::all();
+        $posts = \App\Posts::all();
 
         return redirect('/', compact('posts'));
     }
