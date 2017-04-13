@@ -5,14 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Post;
+use App\Session;
 
 class PostController extends Controller
 {
     public function index(){
 
         $posts = Post::all();
+        $user_id = session('user_id');
 
-        return view('posts.index', compact('posts'));
+        return view('posts.index', compact('posts', 'user_id'));
     }
 
     public function create(){
@@ -47,5 +49,9 @@ class PostController extends Controller
         $post = Post::find($id);
 
         return view('posts.post', compact('post'));
+    }
+
+    public function about(){
+        
     }
 }

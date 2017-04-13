@@ -4,11 +4,15 @@
 
 <div class="col-sm-8 blog-main">
 
-    @foreach ( $posts as $post)
-   
-        @include('posts.post')
+    @if($user_id)
+
+        @foreach ( $posts->reverse() as $post)
     
-    @endforeach
+            @include('posts.post')
+        
+        @endforeach
+        
+    @endif
 
 </div>
 

@@ -8,3 +8,5 @@ Route::get('/posts/create', 'PostController@create');
 Route::post('/posts', 'PostController@store');
 
 Route::get('/posts/{id}', 'PostController@show');
+
+Route::get('/login', 'UserController@logIn');

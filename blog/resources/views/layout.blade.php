@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -20,6 +21,9 @@
     crossorigin="anonymous">
   <!-- Custom styles for this template -->
   <link href="/css/blog.css" rel="stylesheet">
+  <link href="/css/login.css" rel="stylesheet">
+  
+  <script src="/js/login.js"></script>
 </head>
 
 <body>
@@ -33,17 +37,25 @@
     </div>
   </div>
 
+ 
+
+    @include('posts.login')
+
+
+
   <div class="container">
 
     <div class="row">
 
-      @yield('content') @include('layouts.sidebar')
+      @yield('content') 
+      
+      @include('layouts.sidebar')
 
     </div>
 
     <nav class="blog-pagination">
       <a class="btn btn-outline-primary" href="#">Older</a>
-      <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+      <a class="btn btn-outline-secondary" href="#">Newer</a>
     </nav>
 
   </div>
