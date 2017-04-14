@@ -21,9 +21,7 @@
     crossorigin="anonymous">
   <!-- Custom styles for this template -->
   <link href="/css/blog.css" rel="stylesheet">
-  <link href="/css/login.css" rel="stylesheet">
   
-  <script src="/js/login.js"></script>
 </head>
 
 <body>
@@ -36,12 +34,6 @@
       <p class="lead blog-description">An example blog template built with Bootstrap.</p>
     </div>
   </div>
-
- 
-
-    @include('posts.login')
-
-
 
   <div class="container">
 

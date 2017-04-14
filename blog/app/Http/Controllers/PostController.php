@@ -5,16 +5,27 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Post;
-use App\Session;
 
 class PostController extends Controller
 {
-    public function index(){
+    public function index(Request $request){
 
-        $posts = Post::all();
-        $user_id = session('user_id');
+        $user_id = null;
+        $posts = null;
+        
+        if(!is_null($request->session()->get('user_id'))){
 
-        return view('posts.index', compact('posts', 'user_id'));
+            $posts = Post::all();
+            
+            $user_id = $request->session()->get('user_id');
+
+        }
+        if($user_id)
+            return view('posts.index', compact('posts', 'user_id'));
+
+        else
+            return redirect()->action('UserController@login');
+        
     }
 
     public function create(){

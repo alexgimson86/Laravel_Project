@@ -1,7 +1,12 @@
 <?php
 
-//Route::get ('/tasks', 'TasksController@index');
-Route::get('/', 'PostController@index');
+
+
+Route::post('/', 'UserController@submit');
+
+Route::get('/posts/login', 'UserController@login');
+
+Route::post('/posts/register', 'UserController@register');
 
 Route::get('/posts/create', 'PostController@create');
 
@@ -9,4 +14,10 @@ Route::post('/posts', 'PostController@store');
 
 Route::get('/posts/{id}', 'PostController@show');
 
-Route::get('/login', 'UserController@logIn');
+Route::get('/', 'PostController@index');
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
